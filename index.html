@@ -16,7 +16,7 @@
     <img src="images\house-mysterygame.webp" alt="Description of Image" width="400">
     <br>
     <label for="inside">Do you want to go inside the house?</label>
-    <a href="walkway.html"><button onclick = "setNumber('hp', 100)" type="button"> Go Inside</button></a> 
+    <a href="walkway.html"><button onclick = "if (getNumber('hp') < 100) {setNumber('hp', 100)}" type="button"> Go Inside</button></a> 
 
     <br>
     <label for="outside">Do you want to stay outside?</label>
