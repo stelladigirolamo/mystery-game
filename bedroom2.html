@@ -16,12 +16,12 @@
     <img src="images\bedroom-mysterygame.jpg" alt="Description of Image" width="400">
     <br>
     <label for="hallway">Do you want to go to the hallway?</label>
-    <a href="endgamec.html"><button type="button"> Stay and Pet the Cat</button></a> 
+    <a href="endgamec.html"><button onclick = "setNumber('hp', 0)" type="button"> Stay and Pet the Cat</button></a> 
     <br>
     <br>
     <label for="giveup">Do you want to tell the old woman that you have to go home?</label>
-    <a href="outside.html"><button type="button"> Go back outside</button></a>
-    <p><strong>Current HP: </strong>200</p>
+    <a href="outside.html"><button onclick = "setNumber('hp', 200)" type="button"> Go back outside</button></a>
+    <p><strong>Current HP: </strong><span data-number="hp"></span></p>
     <p><strong>Cat's Status: </strong>Found!</p>
     <button onclick="resetGame()">Start over</button>
 <script src="game.js"></script>
