@@ -6,7 +6,7 @@
     <title>Home Page</title>
 </head>
 <body> 
-    <h1>Home Page !!</h1>
+    <h1>Home Page</h1>
     <p>You are walking home one day after school when an old woman 
         comes up to you. She explains that she has lost her cat. 
         She holds up a photo of her cat, and begs you to help look 
@@ -16,12 +16,12 @@
     <img src="images\house-mysterygame.webp" alt="Description of Image" width="400">
     <br>
     <label for="inside">Do you want to go inside the house?</label>
-    <a href="walkway.html"><button onclick = "addstatus(Status = 150)" type="button"> Go Inside</button></a> 
+    <a href="walkway.html"><button onclick = "setNumber('hp', 100);addstatus('Status')" type="button"> Go Inside</button></a> 
 
     <br>
     <label for="outside">Do you want to stay outside?</label>
     <a href="endgame.html"><button type="button"> Stay Outside</button></a>
-    <p><strong>Current HP: </strong>100</p>
+    <p><strong>Current HP: </strong><span id="hp"></span></p>
     <p><strong>Cat's Status: </strong>Not Found</p>
 <script src="game.js"></script>  
 </body>
